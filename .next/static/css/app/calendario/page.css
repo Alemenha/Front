@@ -1,0 +1,230 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/calendario/calendariopage.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.inicio-fundo {
+    background: linear-gradient(to bottom, indigo 20%, black 80%); 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0; 
+  }
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/calendario.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.calendario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+  
+  }
+  
+  .calendario-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 650px; 
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-left: 0;
+  }
+  
+  .calendario-cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    
+  }
+  
+  .calendario-cabeçalho button {
+    background-color: indigo;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .calendario-cabeçalho button:hover {
+    background-color: blueviolet;
+  }
+  
+  .dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .dias-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .dia-calendario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .dia-calendario:hover {
+    background-color: #ddd;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .conteudo-modal {
+    background: white;
+    font-size: 16px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    color:black;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: indigo;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: blueviolet;
+  }
+  
+  .lista-notas {
+    margin-top: 20px;
+    max-height: 200px; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+  .lista-notas p {
+    color: #000;
+    font-size: 16px;
+    padding: 5px 0;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    word-break: break-word; 
+  }
+  
+  .dia-calendario.hoje {
+    background-color: indigo;
+    color: white;
+  }
+  
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/navbar.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75); 
+  padding: 16px;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-menu {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #6366f1;
+  transition: background-color 0.3s;
+}
+
+.item-menu:hover {
+  background-color: #7A1DCE;
+}
+
+.navbotao-login {
+  background-color: #7A1DCE; 
+  color: white;
+  padding: 8px 48px; 
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.botao-login:hover {
+  background-color: indigo;
+}
+
+.navbotao-login:hover {
+  background-color: indigo;
+}
+

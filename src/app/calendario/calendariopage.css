@@ -1,0 +1,10 @@
+.inicio-fundo {
+    background: linear-gradient(to bottom, indigo 20%, black 80%); 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0; 
+  }
