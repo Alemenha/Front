@@ -148,3 +148,7 @@
     color: white;
   }
   
+  .conteudo-modal textarea::placeholder {
+    color: black;
+  }
+  

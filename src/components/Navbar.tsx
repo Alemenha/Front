@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Importa o hook para pegar a rota atual
-import "./navbar.css";
+import "../styles/Navbar.css";
 
 export default function Navbar() {
   const pathname = usePathname(); // Obtém o caminho atual
